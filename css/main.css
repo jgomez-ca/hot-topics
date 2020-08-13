@@ -166,7 +166,7 @@ figcaption {
 footer {
     width: 100%;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 footer a {
@@ -177,9 +177,8 @@ footer a {
 }
 
 .social {
-	margin: 1.5rem;;
+	margin: 1.5rem;
 }
-
 
 .foot {
 	background-color: #892728;
@@ -187,6 +186,10 @@ footer a {
 	font-weight: bolder;
     width: 100%;
 	padding: 1.2rem;
+}
+
+.foot p {
+	color: #ffffff;
 }
 
 /* 					MEDIA QUERIES
