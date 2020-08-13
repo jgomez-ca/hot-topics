@@ -1,0 +1,274 @@
+/*------------------------------------------------------------
+Project:        Final Project - 20S_MTM1526_310 Client-side server development - Intractive Media Management
+Version:        1.0
+Author:         @jgomezt
+Primary use:    Academic Purposes
+Contact:         http://www.twitter.com/jgomezt
+Website:        http://www.jgomezt.com
+
+Content
+1. General Styles
+2. home.html styles
+3. Main Content
+	3.1 Sidebar
+4. Footer
+5. Media Queries 
+
+Colors:
+			Blue:			#2356ff
+			Orange: 		#ff4400
+			Green - light:	#a3d947
+			Green - dark:	#689b10
+			75% Grey:		#636466
+			50% Grey:		#231f20
+			25% Grey:		#c7c8ca
+
+
+Fonts:
+                font-family: 'Quicksand', sans-serif;
+                font-family: 'Raleway', sans-serif;
+                font-family: 'Roboto', sans-serif;
+
+------------------------------------------------------------*/
+
+/*----------	General styles	----------*/
+* {
+	box-sizing: border-box;
+}
+
+
+h1,h2,h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #2356ff;
+}
+
+p {
+    color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff; 
+}
+
+body {
+    margin: auto;
+}
+
+.navbar {
+	text-align: center;
+	background-color: #892728;
+	font-weight: bolder;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+	display: flex;
+	align-content: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: #689b10;
+}
+
+.logo {
+    color: #f18c1f;
+    font-size: 2.5rem;
+    padding: 0 3rem;
+}
+
+figcaption {
+    color: #6f7a85;
+}
+
+.fab {
+	color: #ff4400;
+}
+
+/*----------	home.html styles	----------*/
+.title {
+    text-align: left;
+}
+
+.wrapper {
+    padding: 2rem;    
+}
+
+.divider {
+	height:2px;
+	border-width:0;
+	color:#231f20;
+	background-color:black;
+}
+
+.superhead {
+    background-color: antiquewhite;
+    background-image: url(../img/bg.jpg);
+	background-color: #bfbfbf;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.superhead h1 {
+    margin: 0 10rem;
+    padding:8rem 0;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    max-width: 70rem;
+    padding: 1rem 1.8rem;
+}
+
+.container p{
+    text-align: left;
+}
+
+/*----------	portfolio.html styles	----------*/
+.thumbnail-t {
+    border-bottom: solid 1px #ccc;
+}
+
+.thumbnail-t figure{
+    padding-bottom: 2rem;
+}
+
+/*----------	Footer styles	----------*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+footer a {
+    margin: 1rem;
+	font-size: 0.75rem;
+	color: #636466;
+	font-weight: bolder;
+}
+
+.social {
+	margin: 1.5rem;;
+}
+
+
+.foot {
+	background-color: #892728;
+	color: #ffffff;
+	font-weight: bolder;
+    width: 100%;
+	padding: 1.2rem;
+}
+
+/* 					MEDIA QUERIES
+**************************************************************************/
+
+@media only screen and (max-width: 80rem) and (min-width: 35rem) {
+    html {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        display: inline-flex;
+    }
+    
+    .masthead h1 {
+        margin: auto;
+        padding:6rem 1rem;
+    }
+    
+/*----------	home.html styles	----------*/
+
+    .content-01 {
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding-right: 2rem;
+    }
+
+/*----------	portfolio.html styles	----------*/
+    .thumbnail-t {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: 0;
+        justify-content: space-around;
+    }
+    
+    .thumbnail-t figure {
+        margin: 0; 
+        width: 40%;
+    }
+}
+    
+/* 					Desktop
+**************************************************************************/
+@media only screen and (min-width: 80rem) {
+    html {
+        font-size: 1.15rem; 
+        line-height: 1rem;
+    }
+
+/*----------	home.html styles	----------*/
+    .wrapper {
+        display: flex;
+        margin: auto;
+    }
+    
+    .wrapper p {
+        width: 60%;
+    }
+    
+    .content-01 {
+        width: 40%;
+        margin: 0;
+        padding-right: 2rem;
+    }
+    
+/*----------	portfolio.html styles	----------*/
+    .thumbnail-t {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: auto;
+    }
+    
+    .thumbnail-t img {
+        width: 300px;
+        height: auto;
+    }
+}
