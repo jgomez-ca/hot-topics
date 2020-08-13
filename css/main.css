@@ -9,11 +9,13 @@ Website:        http://www.jgomezt.com
 Content
 1. General Styles
 2. home.html styles
-3. portfoli.html styles
-4. Footer styles
+3. Main Content
+	3.1 Sidebar
+4. Footer
 5. Media Queries 
 
 Colors:
+			Red - Dark:		#892728
 			Blue:			#2356ff
 			Orange: 		#ff4400
 			Green - light:	#a3d947
@@ -71,8 +73,8 @@ body {
 }
 
 .navbar ul {
+	display: flex;
     list-style-type: none;
-    padding: 0;
 }
 
 .navbar ul li {
@@ -88,7 +90,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #689b10;
+    color: #a3d947;
 }
 
 .logo {
@@ -134,7 +136,7 @@ figcaption {
 .superhead h1 {
     margin: 0 10rem;
     padding:8rem 0;
-    color: #fff;
+    color: #892728;
     font-size: 3rem;
     letter-spacing: 0.3rem;
 }
