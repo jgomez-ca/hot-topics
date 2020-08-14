@@ -192,7 +192,38 @@ footer a {
 	color: #ffffff;
 }
 
-/* 					MEDIA QUERIES
+
+/* 		MEDIA QUERIES
+**************************************************************************/
+
+
+/* 		MOBILE
+**************************************************************************/
+
+@media only screen and (max-width: 35rem) {
+    html {
+        font-size: 0.75rem; 
+        line-height: 1.4rem;
+    }
+    
+    .navbar {
+        padding-top: 2rem;
+    }
+    
+    .navbar li {
+        padding: 1rem;
+        border-top: solid 1px #5d676e;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .superhead h1 {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* 		TABLET
 **************************************************************************/
 
 @media only screen and (max-width: 80rem) and (min-width: 35rem) {
